@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilo.css" />
+    <link rel="stylesheet" href="/timer.css" />
+    <title>IDE online para clase Web</title>
+  </head>
+  <body>
+    <main>
+      <section class="flex-collumn">
+        <menu>
+          <button class="change html active">
+            <span class="icon slash">&lt;/&gt;</span> HTML
+          </button>
+          <button class="change css">
+            <span class="icon sharp">#</span> CSS
+          </button>
+          <button class="change js">
+            <span class="icon llaves">{ }</span> JS
+          </button>
+        </menu>
+        <textarea class="text" placeholder="Escribe tu HTML aquí."></textarea>
+        <textarea
+          class="text hide"
+          placeholder="Escribe tu CSS aquí."
+        ></textarea>
+        <textarea
+          class="text hide"
+          placeholder="Escribe tu JS aquí."
+        ></textarea>
+      </section>
+      <section class="flex-collumn">
+        <div class="header">
+          <button class="show">
+            <span class="icon show-code">&gt;&gt;</span> Mira tu código aquí
+          </button>
+          <div id="timer" class="timer">
+            <p id="timer-wrapper" class="timer-wrapper">
+              <span id="minutes" class="minutes">00</span>
+              <span class="dots">:</span>
+              <span id="seconds" class="seconds">00</span>
+            </p>
+
+            <div id="buttons-wrapper" class="buttons">
+              <button id="play-pause" class="play-pause">⏯️</button>
+              <button id="stop" class="stop">⏹️</button>
+              <button id="config" class="config">⏲️</button>
+            </div>
+          </div>
+        </div>
+      <!----> <iframe id="frame" allow=""></iframe> -->
+        <div id="container"></div>
+      </section>
+    </main>
+    <script src="/script.js"></script>
+    <script src="/timer.js"></script>
+  </body>
+</html>

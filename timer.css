@@ -1,0 +1,32 @@
+.timer {
+  margin: 25px 10px;
+  position: relative;
+
+  font-size: 50px;
+  text-align: center;
+}
+
+.timer button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.timer button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.timer .buttons {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  top: 50%;
+  margin: -40px -50px;
+  display: none;
+}
+
+.timer .show {
+  display: block;
+}
